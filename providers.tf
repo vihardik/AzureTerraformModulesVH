@@ -35,7 +35,8 @@ provider "azuread" {
 
 # Set the terraform backend
 terraform {
-  required_version = "~> 1.0.0"
+  #required_version = "~> 1.0.0"
+  required_version = ">= 1.0.0"
   backend "azurerm" {} #Backend variables are initialized through the secret and variable folders
 }
 
